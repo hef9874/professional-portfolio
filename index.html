@@ -4,37 +4,56 @@
   <head>
     <meta charset="UTF-8">
     <title>Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
   </head>
 
   <body>
     <header>
-        <h1>Hannah Ferrell</h1>
+      <div class="hero-image">
+        <div class="hero-text">
+          <h1>Hi, I'm Hannah Ferrell</h1>
+        </div>
+      </div>
     </header>
     <nav>
         <ul>
-            <li>About Me</li>
-            <li>My Work</li>
-            <li>Contact Me</li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#my-work">My Work</a></li>
+          <li><a href="#contact-me">Contact Me</a></li>
         </ul>
     </nav>
     
     <section id="about-me">
         <h2>About Me</h2>
-        <p>This is my portfolio site. I am attending the UNC Codeing Bootcamp.</p>
+        <br>
+        <div id="my-info">
+        <p>This is my portfolio site. I am attending the UNC Coding Bootcamp. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut quasi dolores doloremque necessitatibus iusto iure fuga recusandae nulla quam error quisquam nesciunt magnam consequuntur veniam, optio eaque placeat exercitationem debitis praesentium eveniet labore? Beatae recusandae accusantium, mollitia dolor suscipit ea.</p>
         <img src="./assets/IMG_1695.png" alt="Image of Hannah in a maroon shirt, smiling.">
+        </div>
     </section>
-
+    
     <section id="my-work">
-        <h2>About Me</h2>
-        <p>This is my portfolio site. I am attending the UNC Codeing Bootcamp.</p>
-        <img src="">
+        <h2>My Work</h2>
+        <br>
+        <div id="work-images">
+        <img src="https://picsum.photos/425/200" alt="Placeholder image.">
+        <img src="https://picsum.photos/200" alt="Placeholder image.">
+        <img src="https://picsum.photos/200" alt="Placeholder image.">
+        <img src="https://picsum.photos/200" alt="Placeholder image.">
+        </div>
     </section>
 
-    <section id="contact-me">
-        <h2>About Me</h2>
-        <p>This is my portfolio site. I am attending the UNC Codeing Bootcamp.</p>
-        <img src="">
-    </section>
+    <footer id="contact-me">
+        <h2>Contact Me</h2>
+      <form>
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="email">Email</label><br>
+        <input type="text" id="email" name="email"><br>
+       <br>
+       <input type="submit" value="Submit">
+      </form>
+    </footer>
 
   </body>
 
