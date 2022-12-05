@@ -61,7 +61,6 @@ li a:hover {
 
 h2 {
     color: seagreen;
-    text-align: center;
 }
 
 #about-me {
@@ -69,37 +68,41 @@ h2 {
     width: 100%;
 }
 
+#about-me h2{
+    padding-left:100px;
+}
+
 p {
     line-height: 120%;
     padding: 40px 0px 0px 30px;
-    vertical-align: middle;
 }
 
 #my-info {
     display: flex;
     padding: 10px 140px 30px 140px;
-    vertical-align: middle;
+}
+
+img {
+    align-self: center;
 }
 
 #my-work{
-    padding: 30px 100px 0px 100px;
-    width: 100%;
-    text-align: center;
-    background-color: lightgrey;
-}
-
-#work-images {
-    padding: 0px 50px 50px 30px;
-    margin: auto;
-}
-
-#smaller-images {
     display: flex;
     flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    padding-top: 20px;
+    justify-content: space-between;
+    padding: 40px 100px 10px 100px;
+    width: 100%;
+    background-color: lightgrey;
+    align-self: center;
+}
+
+.bottom-right {
+    position: absolute;
+}
+
+#my-work a {
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.5);
 }
 
 footer {
@@ -121,8 +124,7 @@ input {
 }
 
 @media (max-width: 700px) {
-    #smaller-images, 
-    #workimages, 
+    img,
     #my-info {
         flex 100%;
     }
